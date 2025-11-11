@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTS IFB309 - Dashboard Sensor</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #333;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+      }
+      .data-item {
+        font-size: 1.1em;
+        margin-bottom: 12px;
+      }
+      .data-item strong {
+        color: #0056b3; /* Warna biru untuk data */
+      }
+      .detail-box {
+        background-color: #fafafa;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .detail-box p {
+        margin: 0 0 10px 0;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 10px;
+      }
+      .detail-box p:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>📊 Dashboard Statistik Sensor</h2>
+
+      <div class="data-item">
+        Suhu Maksimal: <strong id="suhu-max">-</strong> &deg;C
+      </div>
+      <div class="data-item">
+        Suhu Minimal: <strong id="suhu-min">-</strong> &deg;C
+      </div>
+      <div class="data-item">
+        Suhu Rata-rata: <strong id="suhu-rata">-</strong> &deg;C
+      </div>
+
+      <hr />
+
+      <h3>Data Saat Suhu & Humidity Max</h3>
+      <div class="detail-box" id="detail-max">
+        <p>Memuat data...</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
